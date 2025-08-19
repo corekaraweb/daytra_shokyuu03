@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img src="img/header-logo.png" alt="logo" />
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">e-tigaとは</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">ご利用の流れ</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">プラン</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">運営会社</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__nav-btn"><button class="btn__regist">無料で登録</button></div>
+        <button class="header__open drawer-icon">
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+        </button>
+      </div>
+      <!-- <div class="drawer-content">
+        <nav class="drawer-content__menu"></nav>
+      </div> -->
+      <div class="fv">
+        <div class="fv__inner inner">
+          <picture>
+            <source srcset="./img/first-view_sp.png" media="(max-width: 1023px)" />
+            <img src="img/first-view_pc.png" alt="fv" />
+          </picture>
+          <div class="fv__content">
+            <div class="fv__logo">
+              <img src="img/fv-logo.png" alt="logo" />
+            </div>
+            <div class="fv__text">
+              <h2 class="fv__title">会社の「チーム力」を強化する</h2>
+              <p class="fv__text-sub">誰でも簡単らくらくに、<br />スケジュールや名刺をデジタル化。<br />チームの管理をよりスピーディーに円滑にします。</p>
+            </div>
+            <button class="btn__regist">無料で登録</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main_inner inner">
+        <section class="news">
+          <div class="news__inner inner">
+            <h2 class="news__title section__title">NEWS</h2>
+            <div class="news__container">
+              <div class="news__item">
+                <p class="news__item-date">2022年12月15日</p>
+                <h3 class="news__item-title">年末年始について</h3>
+              </div>
+              <div class="news__item">
+                <p class="news__item-date">2022年12月10日</p>
+                <h3 class="news__item-title">チームマーケティングプランでフル活用。マーケティング部長に聞いたe-toraの活用方法とは。チームマーケティングプランでフル活用。マーケティング部長に聞いたe-toraの活用方法とは。</h3>
+              </div>
+              <div class="news__item">
+                <p class="news__item-date">2022年9月1日</p>
+                <h3 class="news__item-title">商談効率アップ！セミナーを開催します。</h3>
+              </div>
+              <div class="news__item">
+                <p class="news__item-date">2022年8月1日</p>
+                <h3 class="news__item-title">営業時間の変更について</h3>
+              </div>
+              <div class="news__item">
+                <p class="news__item-date">2022年6月1日</p>
+                <h3 class="news__item-title">e-tiga出張無料体験会を実施致します。</h3>
+              </div>
+            </div>
+            <div class="news__asset">
+              <div class="news__pagenation">
+                <ul class="news__pagenation-list">
+                  <li class="news__pagenation-item">
+                    <a href="#" class="news__pagenation-link">≪</a>
+                  </li>
+                  <li class="news__pagenation-item is-active">
+                    <a href="#" class="news__pagenation-link">1</a>
+                  </li>
+                  <li class="news__pagenation-item">
+                    <a href="#" class="news__pagenation-link">2</a>
+                  </li>
+                  <li class="news__pagenation-item">
+                    <a href="#" class="news__pagenation-link">3</a>
+                  </li>
+                  <li class="news__pagenation-item">
+                    <a href="#" class="news__pagenation-link">4</a>
+                  </li>
+                  <li class="news__pagenation-item">
+                    <a href="#" class="news__pagenation-link">5</a>
+                  </li>
+                  <li class="news__pagenation-item">
+                    <a href="#" class="news__pagenation-link">≫</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="concept">
+          <div class="concept__inner inner">
+            <div class="concept__contents">
+              <picture>
+                <source srcset="./img/concept_sp.png" media="(max-width: 1023px)" />
+                <img src="img/concept_pc.png" alt="concept" />
+              </picture>
+              <div class="concept__content">
+                <h2 class="concept__title">名刺作成から、<br />スケジュール管理、<br />経理までを簡単スピーディーに。</h2>
+                <p class="concept__text">誰でも簡単らくらくに、スケジュールや名刺をデジタル化。チームの管理をよりスピーディーに円滑にします。誰でも簡単らくらくに、スケジュールや名刺をデジタル化。チームの管理をよりスピーディーに円滑にします。誰でも簡単らくらくに、</p>
+                <button class="btn__regist">詳細・できることへ</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="casestudy">
+          <div class="casestudy__inner inner">
+            <div class="casestudy__inner-head inner-head">
+              <h2 class="casestudy__title">CASESTUDY</h2>
+              <p class="casestudy__title-sub">お客様の声</p>
+            </div>
+            <div class="casestudy__swiper-wrap">
+              <div class="casestudy__container">
+                <div id="js-casestudy-swiper" class="swiper">
+                  <div class="swiper-wrapper" id="js-casestudy-swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide casestudy__slide">
+                      <div class="casestudy__slide-inner">
+                        <div class="casestudy__slide-img">
+                          <img src="./img/card-1-img.jpg" alt="card-1" />
+                        </div>
+                        <div class="casestudy__slide-content">
+                          <h3 class="casestudy__slide-title">在宅でも団結したチームワークに。</h3>
+                          <p class="casestudy__slide-assets">〇〇株式会社 吉本様</p>
+                          <p class="casestudy__slide-gyousyoku">情報通信業</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide casestudy__slide">
+                      <div class="casestudy__slide-inner">
+                        <div class="casestudy__slide-img">
+                          <img src="./img/card-2-img.jpg" alt="card-1" />
+                        </div>
+                        <div class="casestudy__slide-content">
+                          <h3 class="casestudy__slide-title">1日2時間分の処理時間の削減に成功</h3>
+                          <p class="casestudy__slide-assets">〇〇株式会社 竹内様</p>
+                          <p class="casestudy__slide-gyousyoku">情報通信業</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide casestudy__slide">
+                      <div class="casestudy__slide-inner">
+                        <div class="casestudy__slide-img">
+                          <img src="./img/card-3-img.jpg" alt="card-1" />
+                        </div>
+                        <div class="casestudy__slide-content">
+                          <h3 class="casestudy__slide-title">導入から1年で残業0へ。</h3>
+                          <p class="casestudy__slide-assets">〇〇株式会社 三島様</p>
+                          <p class="casestudy__slide-gyousyoku">情報通信業</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide casestudy__slide">
+                      <div class="casestudy__slide-inner">
+                        <div class="casestudy__slide-img">
+                          <img src="./img/card-4-img.jpg" alt="card-1" />
+                        </div>
+                        <div class="casestudy__slide-content">
+                          <h3 class="casestudy__slide-title">請求書処理が4日から1日に短縮。</h3>
+                          <p class="casestudy__slide-assets">〇〇株式会社 本田様</p>
+                          <p class="casestudy__slide-gyousyoku">製造業</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide casestudy__slide">
+                      <div class="casestudy__slide-inner">
+                        <div class="casestudy__slide-img">
+                          <img src="./img/card-5-img.jpg" alt="card-1" />
+                        </div>
+                        <div class="casestudy__slide-content">
+                          <h3 class="casestudy__slide-title">会議時間を50％カット。</h3>
+                          <p class="casestudy__slide-assets">〇〇株式会社 野口様</p>
+                          <p class="casestudy__slide-gyousyoku">物流業</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide casestudy__slide">
+                      <div class="casestudy__slide-inner">
+                        <div class="casestudy__slide-img">
+                          <img src="./img/card-6-img.jpg" alt="card-1" />
+                        </div>
+                        <div class="casestudy__slide-content">
+                          <h3 class="casestudy__slide-title">新人の定着率が向上。</h3>
+                          <p class="casestudy__slide-assets">〇〇株式会社 斎藤様</p>
+                          <p class="casestudy__slide-gyousyoku">人材サービス業</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="js-casestudy-swiper-pagination" class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div id="js-casestudy-swiper-button-prev" class="swiper-button-prev"></div>
+              <div id="js-casestudy-swiper-button-next" class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <section class="price">
+          <div class="price__inner inner">
+            <div class="price__inner-head inner-head">
+              <h2 class="price__title">PRICE</h2>
+              <p class="price__title-sub">料金</p>
+            </div>
+            <div class="price__container">
+              <div class="price__item">
+                <div class="price__item-inner">
+                  <p class="price__item-plan">ライトプラン</p>
+                  <p class="price__item-price">無料</p>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">人数</span>
+                    <span class="price__item-detail-item">3人</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">電話サポート</span>
+                    <span class="price__item-detail-item">なし</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">名刺作成</span>
+                    <span class="price__item-detail-item">月2枚まで</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート1</span>
+                    <span class="price__item-detail-item">なし</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート2</span>
+                    <span class="price__item-detail-item">なし</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート3</span>
+                    <span class="price__item-detail-item">なし</span>
+                  </div>
+                  <button class="btn__regist">お申し込み</button>
+                </div>
+              </div>
+              <div class="price__item">
+                <div class="price__item-inner">
+                  <p class="price__item-plan">スタンダード</p>
+                  <p class="price__item-price"><span>月</span>980<span>円</span></p>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">人数</span>
+                    <span class="price__item-detail-item">20人</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">電話サポート</span>
+                    <span class="price__item-detail-item">なし</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">名刺作成</span>
+                    <span class="price__item-detail-item">月15枚まで</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート1</span>
+                    <span class="price__item-detail-item">あり</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート2</span>
+                    <span class="price__item-detail-item">なし</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート3</span>
+                    <span class="price__item-detail-item">なし</span>
+                  </div>
+                  <button class="btn__regist">お申し込み</button>
+                </div>
+              </div>
+              <div class="price__item">
+                <div class="price__item-inner">
+                  <p class="price__item-plan">プロプラン</p>
+                  <p class="price__item-price"><span>月</span>2,480<span>円</span></p>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">人数</span>
+                    <span class="price__item-detail-item">無制限</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">電話サポート</span>
+                    <span class="price__item-detail-item">無制限</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">名刺作成</span>
+                    <span class="price__item-detail-item">無制限</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート1</span>
+                    <span class="price__item-detail-item">あり</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート2</span>
+                    <span class="price__item-detail-item">あり</span>
+                  </div>
+                  <div class="price__item-detail">
+                    <span class="price__item-detail-item">サポート3</span>
+                    <span class="price__item-detail-item">あり</span>
+                  </div>
+                  <button class="btn__regist">お申し込み</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="company">
+          <div class="company__inner inner">
+            <div class="company__inner-head inner-head">
+              <h2 class="company__title">COMPANY</h2>
+              <p class="company__title-sub">会社概要</p>
+            </div>
+            <div class="company__container">
+              <nav class="comapny__nav">
+                <ul class="company__nav-list">
+                  <li class="is-active"><a href="#js-company-item01">会社概要</a></li>
+                  <li><a href="#js-company-item02">沿革</a></li>
+                  <li><a href="#js-company-item03">認証所得</a></li>
+                </ul>
+              </nav>
+              <div class="company__item01" id="js-company-item01">
+                <h3 class="company__item-title">会社概要</h3>
+                <p class="company__item-title-sub">ここに会社概要が入ります。</p>
+                <table class="company__ouline is-sp">
+                  <tr>
+                    <th>会社名</th>
+                    <td>株式会社e-tiga</td>
+                  </tr>
+                  <tr>
+                    <th>資本金</th>
+                    <td>1000万円</td>
+                  </tr>
+                  <tr>
+                    <th>本社所在地</th>
+                    <td>東京都〇〇区〇〇〇〇ビル4階階</td>
+                  </tr>
+                  <tr>
+                    <th>創業</th>
+                    <td>2018年7月10日</td>
+                  </tr>
+                  <tr>
+                    <th>代表社員</th>
+                    <td>田中　太郎</td>
+                  </tr>
+                </table>
+                <table class="company__ouline is-pc">
+                  <tr>
+                    <th>会社名</th>
+                    <td>株式会社e-tiga</td>
+                    <th>創業</th>
+                    <td>2018年7月10日</td>
+                  </tr>
+                  <tr>
+                    <th>資本金</th>
+                    <td>1000万円</td>
+                    <th>代表社員</th>
+                    <td>田中　太郎</td>
+                  </tr>
+                  <tr>
+                    <th>本社所在地</th>
+                    <td colspan="3">東京都〇〇区〇〇〇〇ビル4階階</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="company__item02" id="js-company-item02" style="display: none">
+                <ul class="company__item-list">
+                  <li class="company__item-item"><span class="date">2021年4月</span><br />株式会社e-tiga設立</li>
+                  <li class="company__item-item"><span class="date">2021年12月</span><br />e-tigaリリース</li>
+                  <li class="company__item-item"><span class="date">2022年3月</span><br />導入企業1,000社突破</li>
+                  <li class="company__item-item"><span class="date">2022年10月</span><br />導入企業2,000社突破</li>
+                  <li class="company__item-item"><span class="date">2022年9月</span><br />事務所を渋谷に移転</li>
+                </ul>
+              </div>
+              <div class="company__item03" id="js-company-item03" style="display: none">
+                <div class="company__item-ninsho">
+                  <h3 class="company__item-title">〇〇◎1111認証取得</h3>
+                  <div class="contents">
+                    <p class="contents__text">国際規格である〇〇 認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。国際規格である〇〇 認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。国際規格である〇〇 認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cv">
+          <div class="cv__inner inner">
+            <h2>まずは無料お試し</h2>
+            <p>ライトプランなら無料でお使いいただけます。</p>
+            <button class="btn-free">無料お試し</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
