@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: {
       el: "#js-casestudy-swiper-pagination",
     },
-
-    // Navigation arrows
     navigation: {
       nextEl: "#js-casestudy-swiper-button-next",
       prevEl: "#js-casestudy-swiper-button-prev",
@@ -39,4 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(itemId).style.display = "block";
     });
   });
+});
+document.querySelectorAll(".q__item").forEach((item) => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    item.classList.toggle("is-open");
+    let nextElement = item.nextElementSibling;
+    nextElement.classList.toggle("is-open");
+    nextElement.style.display = item.classList.contains("is-open") ? "block" : "none";
+  });
+});
+document.querySelector(".drawer-icon").addEventListener("click", function () {
+  document.querySelector(".drawer-content").classList.toggle("is-open");
+  document.querySelector(".drawer-icon").classList.toggle("is-open");
 });
