@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: slidesToShow,
     pagination: {
       el: "#js-casestudy-swiper-pagination",
+      clickable: true,
     },
     navigation: {
       nextEl: "#js-casestudy-swiper-button-next",

@@ -15,6 +15,11 @@ $breakpoints: (
     @content;
   }
 }
+@media (any-hover: hover) {
+  a:hover {
+    opacity: 0.7;
+  }
+}
 body {
   font-size: $font-size-base;
   line-height: $line-height-base;
@@ -45,18 +50,19 @@ body {
     right: 15px;
     width: 40px;
     height: 20px;
-    z-index: 10;
+    z-index: 10000;
     &.is-open {
       .drawer-icon__bar {
         background: #fff;
         &:nth-of-type(1) {
           transform: rotate(45deg);
+          top: 10px;
         }
         &:nth-of-type(2) {
           display: none;
         }
         &:nth-of-type(3) {
-          top: 0px;
+          top: 10px;
           transform: rotate(-45deg);
         }
       }
@@ -124,8 +130,10 @@ body {
   right: 0;
   width: 0;
   height: 100%;
+  z-index: 9999;
   background: linear-gradient(180deg, rgba(34, 142, 221, 0.9) 0%, rgba(43, 198, 201, 0.9) 100%);
   transition: width 0.3s linear;
+  overflow-y: scroll;
   .drawer-content__inner {
     padding: 130px 125px;
   }
@@ -710,6 +718,7 @@ body {
     padding: 9px 54px;
     color: #fff;
     margin-top: 17px;
+    display: inline-block;
   }
 }
 
